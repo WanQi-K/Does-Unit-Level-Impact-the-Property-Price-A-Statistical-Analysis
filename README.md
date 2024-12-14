@@ -4,7 +4,7 @@
 
 The COVID-19 pandemic reshaped the property market in Malaysia, particularly in how people value their living spaces. Since the Movement Control Order (MCO) in 2020, high-rise properties have gained favor due to their stricter access controls, which enhance health and safety.
 
-Besides the usual considerations of budget and location, a key decision now is whether to choose a high-rise or landed property. Within the high-rise segment, higher-floor units are typically priced higher, as they are associated with better views, privacy, and reduced noise from street level.
+In Malaysia's post-pandemic market, high-rise properties are in demand, often commanding premiums for higher-floor units as they are associated with better views, privacy, and reduced noise from street level. But are they worth the price?  
 
 However, before assuming that higher floors are always worth the premium, several factors must be considered:
 
@@ -28,6 +28,12 @@ For this analysis, we used data from the **National Property Information Centre 
 - **Time Period:** Transactions from 2021 to mid-2024.
 - **Data Points:** Property area, name, transaction date, size (sq. ft.), and transaction price.
 - **Property Coverage :** Indera Subang Condominium
+
+## TLDR :
+
+- **Unit Level Matters:** Unit location in the building significantly affects property prices.
+- **Better Predictions:** Including `Unit Level` in the model improves accuracy and narrows price estimates.
+- **Data Limitations:** The model is constrained by a small dataset and should be used with caution.
 
 ## Does the Unit Level Really Impact the Property Price?
 
@@ -79,7 +85,7 @@ Result :
 
 The **R-squared value** measures how well the independent variables explain the variability of the dependent variable.
 
-- A higher R-squared value indicates a stronger correlation between the features (e.g., `Unit Level`) and the outcome (e.g., transaction price).
+- A higher R-squared value indicates a stronger correlation between the features (e.g., `Unit Level`) and the outcome (e.g., transaction price). A higher value means the model does a better job of predicting prices. 
 - In this analysis, including `Unit Level` improved the R-squared from **0.332** to **0.475**, demonstrating a higher impact of `Unit Level` on property prices in this dataset.
 
 ## Prediction Analysis: Estimating Property Prices
@@ -240,6 +246,5 @@ Our analysis shows that `Unit Level` significantly impacts property prices in hi
 
 This prediction model has significant room for improvement, particularly due to the limited dataset available for this property. While it provides a helpful guideline, it should be used as a starting point for further research and analysis before making a final decision on purchasing a home.
 
-If you're considering a purchase, such an analysis can help you determine whether the asking price aligns with market trends—helping you make informed decisions and negotiate effectively.
 
 Next article, we will be exploring the actual listing with asking price and compare against our model, to see if there’s any property is undervalued or overpriced.
